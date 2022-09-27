@@ -48,20 +48,116 @@ a {
     text-decoration: none;
 }
 
-nav {
+.main-nav {
     display:flex;
     justify-content: space-between;
-    padding: 20px 20px;
+    width: 90%;
+	padding: 30px 0;
+	margin:0 auto;
 }
 
-
-nav ul {
+.main-nav ul {
     display:flex;
-    gap: 20px;
+    gap: 50px;
+}
+.contacts {
+	background-color: beige;
 }
 .contacts ul{
     display: flex;
     margin:10px 0;
     gap:10px;
-    justify-content: space-between;
+    justify-content: space-evenly;
+}
+header {
+	background-color: lightcoral;
+	padding: 100px 0;
+}
+
+.profile-image {
+	background-image: url('./props/profilna24-min.png');
+	background-repeat: no-repeat;
+	background-position: 0px -15px;
+	background-size: cover;
+	border-radius: 200px;
+	width: 200px;
+	height: 200px;
+}
+.header-holder {
+	width: 90%;
+	margin:0 auto;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 20px
+}
+.header-holder h3 {
+	font-size: 5em;
+	text-align: center;
+}
+.header-holder>.text-holder {
+	display: flex;
+	flex-direction: column;
+	gap:10px
+}
+.header-holder span {
+	font-size: 2em;
+	text-align: center;
+}
+.contacts-holder {
+	width: 90%;
+	margin:0 auto;
+	padding: 20px 0;
+}
+
+.about {
+	background-color: lightgreen;
+	padding: 100px 0;
+}
+
+.about-holder {
+	width: 90%;
+	margin: 0 auto;
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 8rem
+}
+
+.about-holder>.text-holder>h3 {
+	font-size: 3em;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+.skills-holder {
+	display:flex;
+	flex-wrap: wrap;
+}
+.skill {
+	border: 1px solid black;
+	padding: 1rem 1rem;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	border-radius: 10px;
+}
+.projects-holder {
+	width: 90%;
+	padding: 50px 0;
+	margin: 0 auto;
+	display: grid;
+	gap: 30px;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.project-card {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	border: 1px solid black;
+}
+
+footer {
+	text-align: center;
+	padding: 20px 0;
+	background-color: aquamarine;
 }

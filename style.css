@@ -67,9 +67,7 @@ a:visited {
     gap: 50px;
 	align-items: center;
 }
-.contacts {
-	background-color: beige;
-}
+
 .contacts ul{
     display: flex;
     margin:10px 0;
@@ -119,6 +117,9 @@ header {
 .typewriter {
 	height: 200px;
 }
+.Typewriter__cursor {
+	color: purple;
+}
 .contacts-holder {
 	width: 90%;
 	margin:0 auto;
@@ -135,7 +136,8 @@ header {
 	margin: 0 auto;
 	display:grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 8rem
+	gap: 8rem;
+	border: 1px solid black;
 }
 
 .about-holder>.text-holder>h3 {
@@ -146,6 +148,7 @@ header {
 .skills-holder {
 	display:flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 .skill {
 	border: 1px solid black;
@@ -169,10 +172,33 @@ header {
 	align-items: center;
 	gap: 20px;
 	border: 1px solid black;
+	padding: 10px 10px;
 }
+
 
 footer {
 	text-align: center;
 	padding: 20px 0;
-	background-color: aquamarine;
+	background-color: black;
+	color: white;
+}
+.fa-bars:before {
+	display: none;
+}
+.fa-bars {
+	align-self: center;
+	font-size: 1.5em;
+}
+
+@media only screen and (max-width: 800px) {
+	.about-holder {
+		grid-template-columns: 1fr;
+	}
+	.fa-bars:before {
+		display: block;
+		text-align: center;
+	}
+	.main-nav ul {
+		display:none
+	}
 }

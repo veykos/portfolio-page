@@ -56,3 +56,11 @@ for (let project of myProjects) {
     projectCard.className = "project-card"
     projectsHolder.appendChild(projectCard)
 }
+
+
+
+const hamburger = document.querySelector(".fa-bars")
+
+hamburger.addEventListener("click" , () => {
+  console.log('clicked')
+})

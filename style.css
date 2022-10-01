@@ -196,14 +196,17 @@ footer {
 	align-self: center;
 	font-size: 1.5em;
 }
-
+.hidden {
+	display:none;
+	transition: display 1s;
+}
 .mobile-nav {
-	display: none;
 	position: fixed;
 	z-index: 1;
 	color:cyan;
 	background-color: yellowgreen;
-	width:100%;
+	width:50%;
+	left:50%;
 	height: 100%;
 }
 

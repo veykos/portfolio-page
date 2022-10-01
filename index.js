@@ -60,7 +60,8 @@ for (let project of myProjects) {
 
 
 const hamburger = document.querySelector(".fa-bars")
+const mobileNav = document.querySelector(".mobile-nav")
 
 hamburger.addEventListener("click" , () => {
-  console.log('clicked')
+  mobileNav.classList.toggle("hidden")
 })

@@ -71,8 +71,11 @@ for (let project of myProjects) {
 
 
 
+
 const hamburger = document.querySelector(".fa-bars")
 const mobileNav = document.querySelector(".mobile-nav")
+const mobileNavUl = document.querySelector(".mobile-nav>ul")
+console.log(mobileNavUl)
 
 hamburger.addEventListener("click" , () => {
   mobileNav.classList.toggle("hidden")

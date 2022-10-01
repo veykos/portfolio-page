@@ -51,13 +51,19 @@ a:visited {
 	color: inherit;
 }
 
+
 .main-nav {
-    display:flex;
+    display: flex;
     justify-content: space-between;
-    width: 90%;
-	padding: 30px 0;
-	margin:0 auto;
-	font-weight: 700;
+    width: 100vw;
+    padding: 20px 40px;
+    margin: 0 auto;
+    font-weight: 700;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 3;
+    background-color: white;
 }
 .main-nav h3 {
 	font-size: 2em;
@@ -186,8 +192,28 @@ footer {
 	display: none;
 }
 .fa-bars {
+	cursor: pointer;
 	align-self: center;
 	font-size: 1.5em;
+}
+
+.mobile-nav {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	color:cyan;
+	background-color: yellowgreen;
+	width:100%;
+	height: 100%;
+}
+
+.mobile-nav ul {
+	display:flex;
+	padding-top:100px;
+	text-align: right;
+	flex-direction: column;
+	gap:50px;
+	font-size: 2rem;
 }
 
 @media only screen and (max-width: 800px) {

@@ -27,16 +27,19 @@ const myProjects =[
   {
     imgUrl: "https://res.cloudinary.com/dxc2oj7lt/image/upload/v1664655270/battleships_k3otqq.jpg",
     title: "Battleships",
+    url: "https://github.com/veykos/Battleships",
     description: "A clone of the popular board game 'Battleships' created with DOM manipulation and JavaScript. I added two special attacks and an opponent that could beat you if you are not careful."
   },
   {
     imgUrl: "https://res.cloudinary.com/dxc2oj7lt/image/upload/v1664656157/irongames_szksij.jpg",
     title: "IronGames",
-    description: "lorem ipsum lorem ispum lorem ipsum lorem ispum lorem ipsum lorem ispumlorem ipsum lorem ispum lorem ipsum lorem ispumlorem ipsum lorem ispum"
+    url: "https://irongames.cyclic.app/",
+    description: "A project I created together with a classmate from IronHack. A gallery for games made by Ironhack alumni. The website allows for registration, uploading games, editing your profile and adding a profile picture. The backend uses ExpressJS and the rendering is done with HandlebarsJS."
   },
   {
     imgUrl: "placeholder",
     title: "Project 3",
+    url: " ",
     description: "lorem ipsum lorem ispum lorem ipsum lorem ispum lorem ipsum lorem ispumlorem ipsum lorem ispum lorem ipsum lorem ispumlorem ipsum lorem ispum"
   },
 ]
@@ -50,11 +53,16 @@ for (let project of myProjects) {
     projectImage.alt = "project-cover"
     const textHolder = document.createElement("article")
     const title = document.createElement("h4")
+    const linkToProject = document.createElement("a")
+    linkToProject.href = project.url
+    linkToProject.innerHTML = "Check it out"
     title.innerHTML = project.title
     const description = document.createElement("p")
     description.innerHTML = project.description
+
     textHolder.appendChild(title)
     textHolder.appendChild(description)
+    textHolder.appendChild(linkToProject)
     projectCard.appendChild(projectImage)
     projectCard.appendChild(textHolder)
     projectCard.className = "project-card"

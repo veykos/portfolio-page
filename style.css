@@ -50,7 +50,7 @@ a {
 a:visited {
 	color: inherit;
 }
-
+html{scroll-behavior:smooth}
 
 .main-nav {
     display: flex;
@@ -73,7 +73,15 @@ a:visited {
     gap: 50px;
 	align-items: center;
 }
-
+#contacts {
+	scroll-margin-top:72px;
+}
+#about {
+	scroll-margin-top:72px;
+}
+#projects {
+	scroll-margin-top:72px;
+}
 .contacts ul{
     display: flex;
     margin:10px 0;
@@ -118,10 +126,12 @@ header {
 }
 .header-holder span {
 	font-size: 2em;
-	text-align: center;
+	text-align: left;
 }
 .typewriter {
-	height: 200px;
+			height: 200px;
+	width: 400px;
+	overflow-wrap: break-word;
 }
 .Typewriter__cursor {
 	color: purple;
@@ -167,20 +177,40 @@ header {
 	width: 90%;
 	padding: 50px 0;
 	margin: 0 auto;
-	display: grid;
+	/* display: grid;
 	gap: 30px;
-	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); */
 }
 
 .project-card {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	padding: 20px 20px;
+	margin-bottom: 30px;
+	border-radius: 12px;
+	box-shadow: 1px 2px 3px 1px gray;
+}
+.project-card img {
+	grid-column: 1/2;
+	grid-row:1/2;
+	width: 500px;
+	align-self: center;
+}
+.project-card article {
+	grid-column: 2/3;
 	display:flex;
 	flex-direction: column;
-	align-items: center;
-	gap: 20px;
-	border: 1px solid black;
-	padding: 10px 10px;
+	gap:30px;
+	align-self: center;
 }
-
+.project-card p {
+	font-size: 1.25em;
+	line-height: 1.2em;
+}
+.project-card h4 {
+	font-size: 2em;
+}
 
 footer {
 	text-align: center;
@@ -204,9 +234,11 @@ footer {
 	position: fixed;
 	z-index: 1;
 	color:cyan;
-	background-color: yellowgreen;
+	background-color: white;
+	border: 1px solid gray;
+	box-shadow: -2px 0px 10px 1px black;
 	width:50%;
-	left:50%;
+	left:50%; 
 	height: 100%;
 }
 
@@ -217,9 +249,13 @@ footer {
 	flex-direction: column;
 	gap:50px;
 	font-size: 2rem;
+	padding-right: 10px;
+}
+#anchor {
+	scroll-margin-top:300px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 	.about-holder {
 		grid-template-columns: 1fr;
 	}
@@ -229,5 +265,22 @@ footer {
 	}
 	.main-nav ul {
 		display:none
+	}
+	.typewriter {
+		width: 90vw;
+	}
+	.header-holder span {
+		font-size: 2em;
+		text-align: center;
+	}
+	.project-card {
+		display:flex;
+		flex-direction: column;
+	}
+	.project-card h4 {
+		text-align: center;
+	}
+	.project-card p {
+		font-size: 1.1em;
 	}
 }

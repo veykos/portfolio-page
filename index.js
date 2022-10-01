@@ -9,30 +9,34 @@ const type = new Typewriter(typewriter, {
 })
 
 type.pauseFor(2500)
-.typeString('I write code')
+.typeString('write code')
 .pauseFor(2500)
-.deleteChars(12)
-.typeString('I love lifting')
+.deleteChars(10)
+.typeString('love lifting weights')
 .pauseFor(2500)
-.deleteChars(14)
-.typeString('I am an ex navigational officer')
+.deleteChars(20)
+.typeString('used to navigate ships')
 .pauseFor(2500)
+.deleteChars(22)
+.typeString('can actually cook')
+.pauseFor(2500)
+.deleteChars(17)
 .start();
 
 const myProjects =[
   {
-    imgUrl: "placeholder",
+    imgUrl: "https://res.cloudinary.com/dxc2oj7lt/image/upload/v1664655270/battleships_k3otqq.jpg",
     title: "Battleships",
-    description: "lorem ipsum lorem ispum lorem ipsum lorem ispum lorem ipsum lorem ispumlorem ipsum lorem ispum lorem ipsum lorem ispumlorem ipsum lorem ispum"
+    description: "A clone of the popular board game 'Battleships' created with DOM manipulation and JavaScript. I added two special attacks and an opponent that could beat you if you are not careful."
   },
   {
-    imgUrl: "placeholder",
+    imgUrl: "https://res.cloudinary.com/dxc2oj7lt/image/upload/v1664656157/irongames_szksij.jpg",
     title: "IronGames",
     description: "lorem ipsum lorem ispum lorem ipsum lorem ispum lorem ipsum lorem ispumlorem ipsum lorem ispum lorem ipsum lorem ispumlorem ipsum lorem ispum"
   },
   {
     imgUrl: "placeholder",
-    title: "Placeholder",
+    title: "Project 3",
     description: "lorem ipsum lorem ispum lorem ipsum lorem ispum lorem ipsum lorem ispumlorem ipsum lorem ispum lorem ipsum lorem ispumlorem ipsum lorem ispum"
   },
 ]
@@ -41,18 +45,18 @@ const projectsHolder = document.querySelector(".projects-holder")
 
 for (let project of myProjects) {
     const projectCard = document.createElement("div")
-
     const projectImage = document.createElement("img")
     projectImage.src = project.imgUrl;
     projectImage.alt = "project-cover"
-
+    const textHolder = document.createElement("article")
     const title = document.createElement("h4")
     title.innerHTML = project.title
     const description = document.createElement("p")
     description.innerHTML = project.description
+    textHolder.appendChild(title)
+    textHolder.appendChild(description)
     projectCard.appendChild(projectImage)
-    projectCard.appendChild(title)
-    projectCard.appendChild(description)
+    projectCard.appendChild(textHolder)
     projectCard.className = "project-card"
     projectsHolder.appendChild(projectCard)
 }

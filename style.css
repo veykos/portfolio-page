@@ -50,11 +50,15 @@ a {
 a:visited {
 	color: inherit;
 }
-html{scroll-behavior:smooth}
+html{
+	scroll-behavior:smooth;
+	font-family: 'Open Sans', sans-serif;
+}
 
 .main-nav {
     display: flex;
     justify-content: space-between;
+	align-items: center;
     width: 100vw;
     padding: 20px 40px;
     margin: 0 auto;
@@ -66,6 +70,7 @@ html{scroll-behavior:smooth}
     background-color: white;
 }
 .main-nav h3 {
+	font-family: 'Open Sans',sans-serif;
 	font-size: 2em;
 }
 .main-nav ul {
@@ -148,13 +153,13 @@ header {
 }
 
 .about {
-	background-color: #42bd7f78;
+	background-color: #5942bdd1;
+	color: white;
 	padding: 4em 0;
 }
 
 .about-holder {
 	width: 90%;
-	padding:2em;
 	margin: 0 auto;
 	display:grid;
 	grid-template-columns: 1fr 1fr;
@@ -169,16 +174,18 @@ header {
 	font-size: 3em;
 	text-align: center;
 	margin-bottom: 2rem;
+	line-height: 1em;
 }
 
 .skills-holder {
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 }
 
 .skill {
-	border: 1px solid black;
+	box-shadow: 1px 2px 2px rgb(255, 255, 255);
 	padding: 1rem 1rem;
 	margin-right: 1rem;
 	margin-bottom: 1rem;

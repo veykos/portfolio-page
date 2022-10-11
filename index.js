@@ -28,19 +28,19 @@ const myProjects =[
     imgUrl: "https://res.cloudinary.com/dxc2oj7lt/image/upload/v1665419920/sportUp-users-gallery/sportup_xronm7.jpg",
     title: "SportUP",
     url: "https://sportup-app.netlify.app/",
-    description: "A fullstack application using React on the front-end and a RESTful API we created from scratch using NodeJS, ExpressJS and Mongoose. The project won first place at Ironhack's Hackshow for best web development project."
+    description: "Together with an Ironhack classmate we collaborated to make a full stack app that would go on to win the Hackshow - a contest for the best projects from all the alumni. We used React on the front end and we created a RESTful API using NodeJS, ExpressJS, MongoDB and Mongoose. All of that in just under 7 days!"
   },
   {
     imgUrl: "https://res.cloudinary.com/dxc2oj7lt/image/upload/v1664655270/battleships_k3otqq.jpg",
     title: "Battleships",
     url: "https://github.com/veykos/Battleships",
-    description: "A clone of the popular board game 'Battleships' created with DOM manipulation and JavaScript. I added two special attacks and an opponent that could beat you if you are not careful."
+    description: "A clone of the popular board game 'Battleships' with an opponent with a decision making algorithm. Players are able to set up their fleet and rotate the ships to be vertically or horizontally placed on the board and to make the gameplay more dynamic I added two special attacks. Utilized JS classes and DOM manipulation and finished the project in under 4 days!"
   },
   {
     imgUrl: "https://res.cloudinary.com/dxc2oj7lt/image/upload/v1664656157/irongames_szksij.jpg",
     title: "IronGames",
     url: "https://irongames.cyclic.app/",
-    description: "A project I created together with a classmate from IronHack. A gallery for games made by Ironhack alumni. The website allows for registration, uploading games, editing your profile and adding a profile picture. The backend uses ExpressJS and the rendering is done with HandlebarsJS."
+    description: "A project I created together with a classmate from IronHack. A gallery for games made by Ironhack alumni. The project was created in 4 days and used to practice server side rendering and CRUD operations. The website supports users signing up and logging in utilizing PassportJS, holding a user session using Express-sessions. We created the server using NodeJS, ExpressJS, Mongoose and the rendering is done using HandlebarsJS."
   },
 ]
 

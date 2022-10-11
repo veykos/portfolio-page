@@ -309,6 +309,11 @@ footer {
 	font-size: 2rem;
 	padding-right: 10px;
 	color: black;
+	font-weight: 700;
+}
+.mobile-nav li:hover {
+	color: #5942bdd1;
+	transition: color 0.3s;
 }
 
 #anchor {

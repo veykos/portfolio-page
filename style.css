@@ -44,6 +44,9 @@ table {
 
 
 /* END OF CSS RESET */
+:root {
+	--accent-color: #5942bdd1
+}
 a {
     text-decoration: none;
 }
@@ -81,7 +84,7 @@ html{
 	font-weight: 700;
 }
 .main-nav li:hover {
-	color: #5942bdd1;
+	color: var(--accent-color);
 	transition: color 0.3s;
 }
 #contacts {
@@ -104,7 +107,7 @@ html{
 	color: black;
 }
 .contacts-holder i:hover {
-	color: #5942bdd1;
+	color: var(--accent-color);
 	transition: background-color 0.3s;
 }
 
@@ -150,7 +153,7 @@ header {
 	overflow-wrap: break-word;
 }
 .Typewriter__cursor {
-	color: #5942bdd1;
+	color: var(--accent-color);
 }
 .contacts-holder {
 	width: 90%;
@@ -159,7 +162,7 @@ header {
 }
 
 .about {
-	background-color: #5942bdd1;
+	background-color: var(--accent-color);
 	color: white;
 	padding: 4em 0;
 }
@@ -250,7 +253,7 @@ header {
 }
 .project-card a:hover {
 	color:white;
-	background-color: #5942bdd1;
+	background-color: var(--accent-color);
 	transition: background-color 0.3s;
 	font-weight: 700;
 }
@@ -281,7 +284,7 @@ footer {
 	font-size: 1.5em;
 }
 .fa-bars:hover {
-	color: #5942bdd1;
+	color: var(--accent-color);
 	transition: background-color 0.3s;
 }
 .hidden {
@@ -312,7 +315,7 @@ footer {
 	font-weight: 700;
 }
 .mobile-nav li:hover {
-	color: #5942bdd1;
+	color: var(--accent-color);
 	transition: color 0.3s;
 }
 

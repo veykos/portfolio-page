@@ -72,11 +72,17 @@ html{
 .main-nav h3 {
 	font-family: 'Open Sans',sans-serif;
 	font-size: 2em;
+	font-weight: 700;
 }
 .main-nav ul {
     display:flex;
     gap: 50px;
 	align-items: center;
+	font-weight: 700;
+}
+.main-nav li:hover {
+	color: #5942bdd1;
+	transition: color 0.3s;
 }
 #contacts {
 	scroll-margin-top:72px;
@@ -98,7 +104,7 @@ html{
 	color: black;
 }
 .contacts-holder i:hover {
-	color: rgb(140, 85, 192);
+	color: #5942bdd1;
 	transition: background-color 0.3s;
 }
 
@@ -144,7 +150,7 @@ header {
 	overflow-wrap: break-word;
 }
 .Typewriter__cursor {
-	color: rgb(140, 85, 192);
+	color: #5942bdd1;
 }
 .contacts-holder {
 	width: 90%;
@@ -168,12 +174,15 @@ header {
 }
 .about-holder>.text-holder {
 	line-height: 1.3em;
+	font-size: 1.1em;
+	
 }
 
 .about-holder>.text-holder>h3 {
 	font-size: 3em;
+	font-weight: 700;
 	text-align: center;
-	margin-bottom: 2rem;
+	margin-bottom: 3rem;
 	line-height: 1em;
 }
 
@@ -185,11 +194,12 @@ header {
 }
 
 .skill {
-	box-shadow: 1px 2px 2px rgb(255, 255, 255);
+	box-shadow: 0 0 2px white;
 	padding: 1rem 1rem;
 	margin-right: 1rem;
 	margin-bottom: 1rem;
 	border-radius: 10px;
+	font-weight: 700;
 }
 
 .projects-holder {
@@ -236,11 +246,13 @@ header {
 	margin: 4px 10px 4px 10px;
 	max-width: fit-content;
 	margin: 0;
+	font-weight: 700;
 }
 .project-card a:hover {
 	color:white;
-	background-color: rgb(140, 85, 192);
+	background-color: #5942bdd1;
 	transition: background-color 0.3s;
+	font-weight: 700;
 }
 .project-card a:active {
 	margin: 6px 10px 2px 10px;
@@ -251,6 +263,7 @@ header {
 }
 .project-card h4 {
 	font-size: 2em;
+	font-weight: 700;
 }
 
 footer {
@@ -268,7 +281,7 @@ footer {
 	font-size: 1.5em;
 }
 .fa-bars:hover {
-	color: rgb(140, 85, 192);
+	color: #5942bdd1;
 	transition: background-color 0.3s;
 }
 .hidden {

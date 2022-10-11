@@ -25,6 +25,12 @@ type.pauseFor(2500)
 
 const myProjects =[
   {
+    imgUrl: "https://res.cloudinary.com/dxc2oj7lt/image/upload/v1665419920/sportUp-users-gallery/sportup_xronm7.jpg",
+    title: "SportUP",
+    url: "https://sportup-app.netlify.app/",
+    description: "A fullstack application using React on the front-end and a RESTful API we created from scratch using NodeJS, ExpressJS and Mongoose. The project won first place at Ironhack's Hackshow for best web development project."
+  },
+  {
     imgUrl: "https://res.cloudinary.com/dxc2oj7lt/image/upload/v1664655270/battleships_k3otqq.jpg",
     title: "Battleships",
     url: "https://github.com/veykos/Battleships",
@@ -35,12 +41,6 @@ const myProjects =[
     title: "IronGames",
     url: "https://irongames.cyclic.app/",
     description: "A project I created together with a classmate from IronHack. A gallery for games made by Ironhack alumni. The website allows for registration, uploading games, editing your profile and adding a profile picture. The backend uses ExpressJS and the rendering is done with HandlebarsJS."
-  },
-  {
-    imgUrl: "https://res.cloudinary.com/dxc2oj7lt/image/upload/v1665419920/sportUp-users-gallery/sportup_xronm7.jpg",
-    title: "SportUP",
-    url: "https://sportup-app.netlify.app/",
-    description: "A fullstack application using React on the front-end and a RESTful API we created from scratch using NodeJS, ExpressJS and Mongoose. The project won first place at Ironhack's Hackshow for best web development project."
   },
 ]
 

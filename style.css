@@ -45,7 +45,7 @@ table {
 
 /* END OF CSS RESET */
 :root {
-	--accent-color: #5942bdd1
+	--accent-color: #107a5bd1
 }
 a {
 	color:inherit;
@@ -150,7 +150,7 @@ header {
 	text-align: left;
 }
 .typewriter {
-			height: 200px;
+	height: 200px;
 	width: 400px;
 	overflow-wrap: break-word;
 }

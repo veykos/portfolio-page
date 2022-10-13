@@ -9,18 +9,33 @@ const type = new Typewriter(typewriter, {
 })
 
 type.pauseFor(2500)
-.typeString('write code')
+.typeString('love coding')
 .pauseFor(2500)
-.deleteChars(10)
-.typeString('love lifting weights')
+.deleteChars(11)
+.typeString('live in Berlin')
+.pauseFor(2500)
+.deleteChars(14)
+.typeString('am learning every day')
+.pauseFor(2500)
+.deleteChars(21)
+.typeString('am looking for a job')
 .pauseFor(2500)
 .deleteChars(20)
 .typeString('used to navigate ships')
 .pauseFor(2500)
 .deleteChars(22)
+.typeString('enjoy CSS')
+.pauseFor(2500)
+.deleteChars(9)
+.typeString('love lifting weights')
+.pauseFor(2500)
+.deleteChars(20)
 .typeString('can actually cook')
 .pauseFor(2500)
 .deleteChars(17)
+.typeString('read old Sci-Fi books')
+.pauseFor(2500)
+.deleteChars(21)
 .start();
 
 const myProjects =[
@@ -28,7 +43,7 @@ const myProjects =[
     imgUrl: "https://res.cloudinary.com/dxc2oj7lt/image/upload/v1665419920/sportUp-users-gallery/sportup_xronm7.jpg",
     title: "SportUP",
     url: "https://sportup-app.netlify.app/",
-    description: "Together with an Ironhack classmate we collaborated to make a full stack app that would go on to win the Hackshow - a contest for the best projects from all the alumni. We used React on the front end and we created a RESTful API using NodeJS, ExpressJS, MongoDB and Mongoose. All of that in just under 7 days!"
+    description: "Together with a classmate at Ironhack collaborated to make a full stack app that would go on to win the Hackshow - a contest for the best projects from all the alumni. We used React on the front end and we created a RESTful API using NodeJS, ExpressJS, MongoDB and Mongoose. All of that in just under 7 days!"
   },
   {
     imgUrl: "https://res.cloudinary.com/dxc2oj7lt/image/upload/v1664655270/battleships_k3otqq.jpg",

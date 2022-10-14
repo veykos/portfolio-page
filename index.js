@@ -48,7 +48,7 @@ const myProjects =[
   {
     imgUrl: "https://res.cloudinary.com/dxc2oj7lt/image/upload/v1664655270/battleships_k3otqq.jpg",
     title: "Battleships",
-    url: "https://github.com/veykos/Battleships",
+    url: "https://veykos.github.io/Battleships/",
     description: "A clone of the popular board game 'Battleships' with an opponent with a decision making algorithm. Players are able to set up their fleet and rotate the ships to be vertically or horizontally placed on the board and to make the gameplay more dynamic I added two special attacks. Utilized JS classes and DOM manipulation and finished the project in under 4 days!"
   },
   {
